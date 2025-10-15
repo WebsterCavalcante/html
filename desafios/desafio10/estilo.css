@@ -1,0 +1,133 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Andoidete;
+    src: url('fonts/idroid.otf');
+}
+body{
+    background-color: #90dab4;
+    margin: 0px;
+}
+header{
+    background-image: linear-gradient(180deg, #42cd80, #2b8d56);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 1em;
+    
+}
+header > h1{
+    font-family: fantasy;
+    font-weight: normal;
+}
+nav > ul{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+nav > ul > li{
+    display: inline;
+    margin: 0.5em;
+    
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color:white;
+    
+}
+main{
+    background-color: white;
+    margin: 1em 1em 0em 1em;
+    padding: 1em;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+main > h1,h2{
+    font-family: Andoidete, Arial, Helvetica, sans-serif;
+    color: #2b8d56;
+}
+
+
+footer{
+    width: 100%;
+    background-color: #2b8d56;
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+}
+
+aside{
+    background-color: #42cd80;
+    border-radius: 0.6em;
+    margin: 0em 1em 0em 1em;
+    padding: 1em;
+    position: relative;
+}
+aside > h3{
+    color: white;
+    padding: 0.5em;
+}
+div#lado{
+    position: relative;
+    left: 60%;
+    top: -12.5em;
+}
+#chacklist{
+    list-style-image: url("img/verificado.png");
+}
+div#extra{
+    background-color: #c1e8d1;
+    padding: 0.5em;
+    border-radius: 0em 0em 0.6em 0.6em;
+}
+div#extra > ul{
+    height: 13em;
+}
+section{
+    background-color: white;
+    margin: 0em 1em 1em 1em;
+    padding: 1em;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+section#fim{
+    border-radius: 0em 0em 1em 1em;
+}
+section#video{
+    background-color: #2b8d56;
+    margin: 0em 1em 0em 1em;
+    padding: 1em;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+section > iframe{
+    display: block;
+    margin: auto;
+}
+img{
+    display: block;
+    margin: auto;
+}
+/*RESPONSIVIDADE PARA TELAS PEQUENAS*/
+@media (max-width: 1600px){
+    main > img{
+        width: 80%;
+    }
+    main > picture > img{
+        width: 80%;
+    }
+}
+@media (max-width: 1150px){
+    iframe{
+        width: 80%;
+    }
+}
+@media (max-width: 920px){
+    body{
+        background-color: red;
+    }
+
+}
