@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*todas as demais midias*/
+/*
+pquenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 769px até 992px
+Desktop: de 993px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        /*background: url("../img/back-print.jpg") no-repeat;*/
+        background: none;
+    }
+    main {
+        border: 2px solid black;
+        
+    }
+    main::after {
+        content: "Essa impressão foi feita atraves do site WebStudio.com.br";
+        text-decoration: overline;
+    }
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+    #fone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url("../img/back-tablet.jpg");
+    }
+    #fone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url("../img/back-pc.jpg");
+    }
+    #fone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+@media screen and (min-width: 1200px) {
+    body {
+        background: url("../img/back-tv.jpg");
+    }
+    #fone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
