@@ -1,0 +1,39 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgrey;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* colocar valores fixos para a maioria e valores flexiveis ppara os mais importantes e que terão mais conteudo */
+    grid-template: 80px 40px 1fr 40px / 1fr 150px;
+    /* 4 linhas = 5 grid-lines horizontais*/
+    /* 3 colunas = 4 grid-lines verticais */
+}
+header{
+    background-color: red;
+    grid-area: 1 / 1 / 2 / -1 ;
+    text-align: center;
+}
+nav{
+    background-color: blue;
+    grid-area: 2 / 1 / 3 / -1;
+}
+main{
+    background-color: aquamarine;
+    grid-area: 3 / 1 / 4 / -2;
+}
+aside{
+    background-color: coral;
+    grid-area: 3/ 2 / -2 / -1;
+}
+footer{
+    background-color: black;
+    grid-area: 4/ 1 / 5/ -1;
+    color: white;
+    text-align: center;
+}
